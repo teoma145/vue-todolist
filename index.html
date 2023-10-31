@@ -23,8 +23,8 @@
             </div>
             <div>
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-action d-flex justify-content-between">
-                        <span>cose</span>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between" v-for="(task,index) in tasks">
+                        <span :class="{'done':task.done}">{{task.text}}</span>
                        <i class="fa-solid fa-trash mt-1"></i>
                     </li>
                 </ul>
