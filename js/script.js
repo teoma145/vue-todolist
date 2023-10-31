@@ -23,6 +23,15 @@ createApp({
             ],
             ultimoid : 3,
     }
+    
+},
+  methods: {
+    removeTask(i){
+        this.tasks.splice(i, 1)
+    },
+
+
+
 }
     
 
