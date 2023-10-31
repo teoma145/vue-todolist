@@ -33,7 +33,7 @@ createApp({
     newtask(){
         this.ultimoid++;
         const newitem= {
-            id: this.lastId,
+            id: this.ultimoid,
             text: this.addtask,
             done: false
         }
