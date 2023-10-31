@@ -41,7 +41,9 @@ createApp({
         this.addtask = '';
     },
 
-
+    toggleDone(task) {
+        task.done = !task.done; 
+    },
 
 }
     
