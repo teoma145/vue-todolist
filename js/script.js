@@ -22,12 +22,23 @@ createApp({
                 
             ],
             ultimoid : 3,
+            addtask :"",
     }
     
 },
   methods: {
     removeTask(i){
         this.tasks.splice(i, 1)
+    },
+    newtask(){
+        this.ultimoid++;
+        const newitem= {
+            id: this.lastId,
+            text: this.addtask,
+            done: false
+        }
+        this.tasks.unshift(newitem);
+        this.addtask = '';
     },
 
 
